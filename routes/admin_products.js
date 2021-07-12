@@ -20,7 +20,7 @@ const { exists } = require('../models/product');
 
 router.get('/', isAdmin, function(req,res){
 
-    /*
+    /* This is producing error, because count is not working properly.
    var count;
     Product.estimatedDocumentCount(function(err, c){
         count = c;
