@@ -1,11 +1,9 @@
 
 /*
    mongodb+srv://testdb:<password>@cluster0.uxyzv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-
    mongodb+srv://testdb:testdb123@cluster0.uxyzv.mongodb.net/shopperDb?retryWrites=true&w=majority
 
 */
-
 
 var express = require('express');
 var path = require('path');

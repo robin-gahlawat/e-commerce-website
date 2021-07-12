@@ -3,14 +3,12 @@ var express = require('express');
 var router = express.Router();
 var mkdirp = require('mkdirp');
 var fs = require('fs-extra');
-var resizeImg = require('resize-Img');
+var resizeImg = require('resize-img');
 
 var auth = require('../config/auth');
 var isAdmin = auth.isAdmin;
 
 var crypto = require("crypto");
-
-
 
 
 
