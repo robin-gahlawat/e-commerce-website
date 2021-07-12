@@ -1,0 +1,26 @@
+
+<%- include('_layouts/header'); -%>
+
+
+<h1> <%= title %> </h1>
+
+<form method="post" action="/users/login">
+
+    
+    <div class="form-group">
+        <label for="">Username</label>
+        <input type="text" class="form-control" name="username" placeholder="Userame">
+    </div><br>
+
+    <div class="form-group">
+        <label for="">Password</label>
+        <input type="password" class="form-control" name="password" placeholder="Password">
+    </div><br>
+
+    <br>
+    <button class="btn btn-outline-dark" style= "position: absolute; right:8%"  >Login</button>
+  
+  </form>
+
+
+<%- include('_layouts/footer'); -%>

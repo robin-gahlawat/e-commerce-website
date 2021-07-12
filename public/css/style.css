@@ -1,0 +1,42 @@
+
+img.pimage {
+    width: 150px;
+}
+
+a.pa {
+    display: inline-block;
+    height: 180px;
+}
+
+.row.products .p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img.spi {
+    width: 100%;
+}
+
+
+ul.gallery{
+    padding: 0;
+}
+ul.gallery li:first-child {
+    margin-left: 0;
+}
+ul.gallery li{
+    display: inline-block;
+    margin: 20px;
+    list-style: none;
+}
+
+table.alignmiddle td{
+    vertical-align: middle !important;
+}
+
+.alert-error{
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+

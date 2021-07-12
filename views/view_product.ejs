@@ -1,0 +1,57 @@
+
+<%- include('_layouts/header'); -%>
+
+<div class="row">
+
+  <h1 class="page-header"><%= p.title %></h1><br>
+
+  <div class="col-xs-12 col-md-5">
+    <img class="spi" src="/product_images/<%= p.id %>/<%= p.image%>" alt="">
+    <br>
+  </div>
+
+  <div class="col-xs-12 col-md-7">
+    <p><%- p.desc %></p>
+    <p>$<%= parseFloat(p.price).toFixed(2) %></p>
+
+    <% if(loggedIn){ %>
+      <form method="post" action="/cart/addbtn/<%= p._id %>">
+        <div class="form-group ">
+          <label for="">Quantity</label>
+          <input type="text" class="cart-add" style="width: 10%;" name="qty" id="qty" value="1" placeholder="qty">
+          <button class="btn btn-outline-dark" style="font-size: 13px;"  >Add to Cart</button>
+        </div>
+      </form>
+      <br>
+      <p><a href="/cart/checkout">My cart</a></p>
+    <% } else{ %>
+      <p>You must be Logged In to add product to your cart.</p>
+    <% } %>
+
+    <br><br>
+  </div>
+
+  
+
+
+  <div class="col-xs-12">
+    <ul class="gallery">
+      <% galleryImages.forEach(function(image){ %>
+        <% if (image != "thumbs") { %>
+          <li>
+            <a data-fancybox="gallery" href="/product_images/<%= p.id %>/gallery/<%= image %>">
+              <img src="/product_images/<%= p.id %>/gallery/thumbs/<%= image %>" alt="">
+            </a>
+          </li>
+        <% } %>
+      <% }); %>
+    </ul>
+  </div>
+
+
+
+
+</div>
+
+
+<%- include('_layouts/footer'); -%>

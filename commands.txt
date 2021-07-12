@@ -1,0 +1,27 @@
+
+-g => means global install
+
+npm init
+npm install --save express ejs
+npm intsall -g nodemon
+nodemon myapp.js
+
+DATABASE:
+npm install mongoose
+
+MIDDLEWARE:
+npm install body-parser
+npm install --save express-session
+npm install --save express-validator
+npm install express-validate
+npm install --save express-messages
+npm install --save connect-flash
+
+Extra dependencies:
+npm install express-fileupload fs-extra mkdirp resize-img
+>install 0.5.0 version of mkdirp only: npm install mkdirp@0.5.1
+
+Authentication dependencies:
+npm install passport@0.4.0
+npm install passport-local bcryptjs
+
