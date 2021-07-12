@@ -1,5 +1,5 @@
 
--g => means global install
+-g => means global install 
 
 npm init
 npm install --save express ejs
